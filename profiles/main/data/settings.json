@@ -1,0 +1,134 @@
+{
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "GitLive.Issue tracker integration": "Disabled",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'FiraCode Nerd Font','Fira Code','Droid Sans Mono', 'monospace', monospace",
+  "doxdocgen.generic.authorEmail": "moewold@outlook.com",
+  "doxdocgen.generic.authorName": "Shinonome Tera tanuki",
+  "doxdocgen.file.copyrightTag": [
+    "Copyright (c) {year} Shinonome Tera tanuki."
+  ],
+  "workbench.colorTheme": "Atom One Dark",
+  "gitlens.defaultDateFormat": null,
+  "gitlens.hovers.currentLine.over": "line",
+  "oracledevtools.bookmarkFileFolder": "/home/shinonome/Oracle/oracle.oracledevtools",
+  "oracledevtools.download.otherFolder": "/home/shinonome/downloads",
+  "oracledevtools.connectionConfiguration.configFilesFolder": "/home/shinonome/Oracle/network/admin",
+  "oracledevtools.connectionConfiguration.walletFileFolder": "/home/shinonome/Oracle/network/admin",
+  "[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "C_Cpp_Runner.cppStandard": "c++14",
+  "C_Cpp_Runner.cStandard": "c11",
+  "cmake.options.statusBarVisibility": "visible",
+  "cmake.copyCompileCommands": "",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "haskell.manageHLS": "PATH",
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "cmake binary debug(gdb)",
+        "type": "gdb",
+        "request": "launch",
+        "target": "${workspaceFolder}/build/bin/main",
+        "cwd": "${workspaceFolder}/build/bin/"
+      },
+      {
+        "name": "current file binary debug(gdb+gnu cpp)",
+        "type": "gdb",
+        "request": "launch",
+        "target": "${workspaceFolder}/${fileBasenameNoExtension}",
+        "cwd": "${workspaceFolder}/",
+        "preLaunchTask": "current file binary build gnu cpp"
+      },
+      {
+        "name": "binary a.out debug(gdb)",
+        "type": "gdb",
+        "request": "launch",
+        "target": "${workspaceFolder}/a.out",
+        "cwd": "${workspaceFolder}/"
+      }
+    ],
+    "compounds": []
+  },
+  "accessibility.signalOptions.experimental.delays.general": {
+    "announcement": 3000,
+    "sound": 400
+  },
+  "accessibility.signalOptions.experimental.delays.errorAtPosition": {
+    "announcement": 3000,
+    "sound": 1000
+  },
+  "accessibility.signalOptions.experimental.delays.warningAtPosition": {
+    "announcement": 3000,
+    "sound": 1000
+  },
+  "sync.gist": "4153c29426d249343d03e84b6266bc9a",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.quietSync": false,
+  "cmake.debugConfig": {
+    "type": "lldb",
+    "request": "launch",
+    "program": "${command:cmake.launchTargetPath}",
+    "target": "${command:cmake.launchTargetPath}", //equal to the line above, but the plugin native-debugger needs it
+    "args": [],
+    "cwd": "${workspaceFolder}"
+  },
+  "explorer.compactFolders": false,
+  "clang-format.fallbackStyle": "Google",
+  "accessibility.signalOptions.volume": 0,
+  "Codegeex.Privacy": false,
+  "Codegeex.CandidateNum": "2 (medium)",
+  "codeium.enableCodeLens": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "julia.symbolCacheDownload": true,
+  "GitLive.Special branches": "main|master|trunk|dev|develop|qa|test|release[-/].*",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "mblode.pretty-formatter"
+  },
+  "java.configuration.runtimes": [
+    "/usr/lib/jvm/java-17-openjdk-amd64",
+    "/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+  ],
+  "julia.enableTelemetry": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "rsp-ui.enableStartServerOnActivation": [
+    {
+      "id": "redhat.vscode-server-connector",
+      "name": "JBoss Toolkit",
+      "startOnActivation": true
+    }
+  ],
+  "sync.forceUpload": false
+}
