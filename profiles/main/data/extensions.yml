@@ -230,6 +230,8 @@ enabled:
     uuid: 438221f8-1107-4ccd-a6fe-f3b7fe0856b7
   - id: mkhl.direnv
     uuid: e365e970-aeef-4dcd-8e4a-17306a27ab62
+  - id: MohammadBaqer.better-folding
+    uuid: bda65566-5654-42e8-a130-73b026ead59f
   - id: mongodb.mongodb-vscode
     uuid: 4b6540da-bfa3-4b88-b9e3-df8f2d161124
   - id: monokai.theme-monokai-pro-vscode
@@ -414,5 +416,7 @@ enabled:
     uuid: 26a529c9-2654-4b95-a63f-02f6a52429e6
   - id: Zignd.html-css-class-completion
     uuid: 7b71fc1b-190d-4f7d-95d1-93e422649b0a
+  - id: zjffun.gotofolder
+    uuid: bf8bd425-087a-41da-a859-47c29bf895b9
   - id: zokugun.cron-tasks
     uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb

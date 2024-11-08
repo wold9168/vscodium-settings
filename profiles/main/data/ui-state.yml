@@ -1,5 +1,5 @@
 arrterian.nix-env-selector: '{"Nix Env Selector":{"name":"Nix Env Selector"}}'
-Codeium.codeium: '{"codeium.installationID":"B29JyEmrinZnoBPCZPobYe4kRQOV3kqW","codeium.hasInstalledKey":true,"codeium.hasShownFirstTimeAuthModalKey":true,"codeium.hasAuthenicatedKey":true,"codeium.chatAnnounceNotificationShown":true,"codeium.usage_codeiumCommand_v3":26}'
+Codeium.codeium: '{"codeium.installationID":"B29JyEmrinZnoBPCZPobYe4kRQOV3kqW","codeium.hasInstalledKey":true,"codeium.hasShownFirstTimeAuthModalKey":true,"codeium.hasAuthenicatedKey":true,"codeium.chatAnnounceNotificationShown":true,"codeium.usage_codeiumCommand_v3":28}'
 cschlosser.doxdocgen: '{"doxdocgen_version":"1.4.0"}'
 DEVSENSE.composer-php-vscode: '{"latest.phar.timestamp":1727983955.159}'
 DEVSENSE.phptools-vscode: '{"welcome.lastversion":"1.51"}'
@@ -56,7 +56,7 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   1.2.4-universal/resources/logo.svg\",\"scheme\":\"file\"},\"name\":\"Python\",\
   \"isBuiltin\":false,\"views\":[{\"when\":\"workspaceFolderCount >=
   1\"},{}]},{\"id\":\"workbench.view.extension.gitlive\",\"iconUrl\":{\"$mid\":\
-  1,\"path\":\"%%EXTENSION_DATA_PATH%%/teamhub.teamhub-18.0.8-universal/resourc\
+  1,\"path\":\"%%EXTENSION_DATA_PATH%%/teamhub.teamhub-18.0.9-universal/resourc\
   es/logo.svg\",\"scheme\":\"file\"},\"name\":\"GitLive\",\"isBuiltin\":false,\
   \"views\":[{}]},{\"id\":\"workbench.view.debug\",\"themeIcon\":{\"id\":\"run-\
   view-icon\"},\"name\":\"运行和调试\",\"isBuiltin\":true,\"views\":[{\"when\":\"deb\
@@ -168,6 +168,8 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   ReposManagerStateContext !=
   'NeedsAuthentication'\"},{\"when\":\"!github:resolvingConflicts &&
   ReposManagerStateContext !=
+  'NeedsAuthentication'\"},{\"when\":\"config.githubPullRequests.experimental.n\
+  otificationsView && !github:resolvingConflicts && ReposManagerStateContext !=
   'NeedsAuthentication'\"},{\"when\":\"github:resolvingConflicts\"}]},{\"id\":\
   \"workbench.view.extension.github-pull-request\",\"themeIcon\":{\"id\":\"git-\
   pull-request\"},\"name\":\"GitHub Pull
@@ -244,14 +246,18 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   'empty'\"},{\"when\":\"java:serverMode || workbenchState ==
   'empty'\"},{\"when\":\"java:serverMode &&
   spring:hasLiveProcess\"},{\"when\":\"java:serverMode &&
-  spring:hasLiveProcess\"}]},{\"id\":\"workbench.panel.chatSidebar\",\"themeIcon\
-  \":{\"id\":\"comment-discussion\"},\"name\":\"聊天\",\"isBuiltin\":true,\"views\
-  \":[{\"when\":\"chatExtensionInvalid ||
-  chatPanelParticipantRegistered\"}]},{\"id\":\"userDataProfiles\",\"name\":\"个\
-  人资料\",\"isBuiltin\":false}]"
+  spring:hasLiveProcess\"}]},{\"id\":\"workbench.panel.chatSidebar\",\"name\":\
+  \"Chat (Old
+  Location)\",\"isBuiltin\":false},{\"id\":\"userDataProfiles\",\"name\":\"个人资料\
+  \",\"isBuiltin\":false}]"
 workbench.activityBar.location: default
+workbench.auxiliarybar.pinnedPanels: '[{"id":"workbench.panel.chatEditing","pinned":true,"visible":false,"order":100},{"id":"workbench.panel.chat","pinned":true,"visible":false,"order":100}]'
+workbench.auxiliarybar.placeholderPanels: '[{"id":"workbench.panel.chatEditing","themeIcon":{"id":"edit-session"},"name":"Copilot
+  Edits","isBuiltin":true,"views":[{"when":"chatEditingParticipantRegistered"}]},{"id":"workbench.panel.chat","themeIcon":{"id":"comment-discussion"},"name":"聊天","isBuiltin":true,"views":[{"when":"chatExtensionInvalid
+  || chatPanelParticipantRegistered"}]}]'
 workbench.auxiliaryBar.size: "256"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["shellscript",true],["go",true],["cmake",true],["cpp",true],["python",true],["lua",true],["markdown",true],["xml",true],["jsonc",true],["java",true],["plaintext",true],["yaml",true]]'
+workbench.chat.hideMovedChatWelcomeView: "true"
+workbench.editor.languageDetectionOpenedLanguages.global: '[["go",true],["python",true],["lua",true],["markdown",true],["xml",true],["jsonc",true],["java",true],["yaml",true],["ignore",true],["plaintext",true],["cmake",true],["cpp",true]]'
 workbench.explorer.views.state.hidden: '[{"id":"outline","isHidden":false},{"id":"timeline","isHidden":false},{"id":"workbench.explorer.openEditorsView","isHidden":false},{"id":"workbench.explorer.emptyView","isHidden":false},{"id":"npm","isHidden":true},{"id":"go.explorer","isHidden":false},{"id":"haxe.dependencies","isHidden":false},{"id":"clangd.typeHierarchyView","isHidden":false},{"id":"clangd.memoryUsage","isHidden":false},{"id":"clangd.ast","isHidden":false},{"id":"sqlite.explorer","isHidden":false},{"id":"workbench.explorer.fileView","isHidden":false},{"id":"rustDependencies","isHidden":false},{"id":"javaProjectExplorer","isHidden":false},{"id":"mavenProjects","isHidden":false},{"id":"codegeex-qa","isHidden":false},{"id":"servers","isHidden":false},{"id":"podmanView","isHidden":false},{"id":"dartDependencyTree","isHidden":false},{"id":"xmlTreeView","isHidden":false},{"id":"mysql","isHidden":false},{"id":"gitlens.views.graph","isHidden":false},{"id":"gitlens.views.graphDetails","isHidden":false},{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"gitlens.views.pullRequest","isHidden":false},{"id":"gitlens.views.timeline","isHidden":false},{"id":"workspaceEnvironments","isHidden":false},{"id":"pythonEnvironments","isHidden":false},{"id":"spring.apps","isHidden":false},{"id":"spring.beans","isHidden":false},{"id":"spring.mappings","isHidden":false},{"id":"spring.properties","isHidden":false},{"id":"spring.memoryView","isHidden":false},{"id":"REPLVariables","isHidden":false},{"id":"julia-documentation","isHidden":false},{"id":"julia-plot-navigator","isHidden":false}]'
 workbench.grid.size: '{"height":768,"width":1024}'
 workbench.panel.alignment: center
@@ -318,7 +324,7 @@ workbench.view.extension.github-actions.state.hidden: '[{"id":"github-actions.cu
 workbench.view.extension.github-cweijan-mysql.state.hidden: '[{"id":"github.cweijan.mysql","isHidden":false}]'
 workbench.view.extension.github-cweijan-nosql.state.hidden: '[{"id":"github.cweijan.nosql","isHidden":false}]'
 workbench.view.extension.github-pull-request.state.hidden: '[{"id":"github:createPullRequestWebview","isHidden":false},{"id":"github:compareChangesFiles","isHidden":false},{"id":"github:compareChangesCommits","isHidden":false},{"id":"prStatus:github","isHidden":false},{"id":"github:activePullRequest","isHidden":false},{"id":"github:activePullRequest:welcome","isHidden":false}]'
-workbench.view.extension.github-pull-requests.state.hidden: '[{"id":"github:login","isHidden":false},{"id":"pr:github","isHidden":false},{"id":"issues:github","isHidden":false},{"id":"github:conflictResolution","isHidden":false}]'
+workbench.view.extension.github-pull-requests.state.hidden: '[{"id":"github:login","isHidden":false},{"id":"pr:github","isHidden":false},{"id":"issues:github","isHidden":false},{"id":"github:conflictResolution","isHidden":false},{"id":"notifications:github","isHidden":false}]'
 workbench.view.extension.gitlab-workflow.state.hidden: '[{"id":"issuesAndMrs","isHidden":false},{"id":"currentBranchInfo","isHidden":false}]'
 workbench.view.extension.gitlens.state.hidden: '[{"id":"gitlens.views.welcome","isHidden":false},{"id":"gitlens.views.home","isHidden":false},{"id":"gitlens.views.launchpad","isHidden":false},{"id":"gitlens.views.drafts","isHidden":false},{"id":"gitlens.views.workspaces","isHidden":false},{"id":"gitlens.views.account","isHidden":false}]'
 workbench.view.extension.gitlensInspect.state.hidden: '[{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"gitlens.views.pullRequest","isHidden":false},{"id":"gitlens.views.timeline","isHidden":false}]'
@@ -350,7 +356,7 @@ workbench.view.extension.workspaceViewer.state.hidden: '[{"id":"workspaceViewer"
 workbench.view.extensions.state.hidden: '[{"id":"workbench.views.extensions.installed","isHidden":false},{"id":"workbench.views.extensions.searchOutdated","isHidden":false},{"id":"workbench.views.extensions.workspaceRecommendations","isHidden":false},{"id":"workbench.views.extensions.popular","isHidden":false},{"id":"workbench.views.extensions.searchRecentlyUpdated","isHidden":false},{"id":"workbench.views.extensions.otherRecommendations","isHidden":false},{"id":"extensions.recommendedList","isHidden":false},{"id":"workbench.views.extensions.enabled","isHidden":true},{"id":"workbench.views.extensions.disabled","isHidden":true},{"id":"workbench.views.extensions.marketplace","isHidden":false},{"id":"workbench.views.extensions.searchInstalled","isHidden":false},{"id":"workbench.views.extensions.searchEnabled","isHidden":false},{"id":"workbench.views.extensions.searchDisabled","isHidden":false},{"id":"workbench.views.extensions.searchBuiltin","isHidden":false},{"id":"workbench.views.extensions.searchWorkspaceUnsupported","isHidden":false},{"id":"workbench.views.extensions.builtinFeatureExtensions","isHidden":false},{"id":"workbench.views.extensions.builtinThemeExtensions","isHidden":false},{"id":"workbench.views.extensions.builtinProgrammingLanguageExtensions","isHidden":false},{"id":"workbench.views.extensions.untrustedUnsupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.untrustedPartiallySupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.virtualUnsupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.virtualPartiallySupportedExtensions","isHidden":false},{"id":"workbench.views.extensions.deprecatedExtensions","isHidden":false},{"id":"workbench.views.extensions.local.installed","isHidden":false},{"id":"workbench.views.extensions.remote.installed","isHidden":false}]'
 workbench.view.remote.state.hidden: '[{"id":"sshHosts","isHidden":false},{"id":"wslTargets","isHidden":false}]'
 workbench.view.search.state.hidden: '[{"id":"workbench.view.search","isHidden":false}]'
-workbench.views.extensions.installed.size: "209"
+workbench.views.extensions.installed.size: "210"
 workbench.views.extensions.local.installed.size: "207"
 workbench.views.extensions.remote.installed.size: "1"
 workbench.welcomePage.hiddenCategories: '["Beginner","ms-python.python#pythonWelcome"]'
